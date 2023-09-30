@@ -1,7 +1,7 @@
 # SocialMediaApp-withTommmyTaco
 I created a simple social media while studying a course available in freecodecamp YouTube channel presented by the instructor Tommy Taco
 
-#### ⭐️ Course Contents ⭐️
+#### Course Contents from its description on YouTube:
 * (0:00:00) Intro    
 * (0:00:52) Project Demo    
 * (0:06:37) Project Setup

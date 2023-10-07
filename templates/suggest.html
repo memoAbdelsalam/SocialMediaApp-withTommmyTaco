@@ -1,0 +1,33 @@
+{% for suggest in users %}
+	{% if suggest == request.user %}
+	{% elif suggest.username in user_following_list %}
+	{% else %}
+	<h3>Username: {{suggest.username}}</h3>
+	<p>email: {{suggest.email}}</p>
+	{{suggest.Profile.bio}}
+	<hr>
+	{% endif %}
+{% endfor %}
+
+<div style="border-bottom: 10px solid yellowgreen;"></div>
+
+{% for suggest in user_following %}
+
+	<h3>follower: {{suggest.follower}}</h3>
+	<p>user: {{suggest.user}}</p>
+	<hr>
+	
+{% endfor %}
+
+<div style="border-bottom: 10px solid yellowgreen;"></div>
+
+{% for suggest in profiles %}
+	{% if suggest.user == request.user %}
+	{% elif suggest.user.username in user_following_list %}
+	{% else %}
+	<h3>Username: {{suggest.user}}</h3>
+	<p>email: {{suggest.email}}</p>
+	<img src='{{suggest.profile_img.url}}' style="height:100; width: 100;" />
+	<hr>
+	{% endif %}
+{% endfor %}
